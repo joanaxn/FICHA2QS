@@ -5,6 +5,9 @@ public class User {
     private int age;
     private String name;
     private double weight;
+    private static double bmiSkinny = 18;
+    private static double bmiHealthy = 25;
+    private static double bmiOverW = 25;
     private static int instanceCount = 0;
 
     /**
@@ -42,4 +45,75 @@ public class User {
         this.weight = weight;
         instanceCount++;
     }
+
+    /**
+     * Interrogative and modifier methods for instance variables.
+     * Set methods allow for changing the value of the variable.
+     * Get methods return the value of the variable.
+     */
+
+    public double getHeight() {
+        return height;
+    }
+
+    public void setHeight(double height) {
+
+        this.height = height;
+    }
+
+    public int getAge() {
+
+        return age;
+    }
+
+    public void setAge(int age) {
+
+        this.age = age;
+    }
+
+    public double getWeight() {
+
+        return weight;
+    }
+
+    public void setWeight(double weight) {
+        this.weight = weight;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+
+    public static void setBmiSkinny(double bmiSkinny) {
+        User.bmiSkinny = bmiSkinny;
+    }
+
+    public static double getBmiOverW() {
+        return bmiOverW;
+    }
+
+    public static void setBmiHealthy(double bmiHealthy) {
+        User.bmiHealthy = bmiHealthy;
+    }
+
+    public static int getInstanceCount() {
+        return instanceCount;
+    }
+
+    public static void setInstanceCount(int instanceCount) {
+
+        User.instanceCount = instanceCount;
+    }
+
+
+    public static void setBmiOverW(double bmiOverW) {
+
+        User.bmiOverW = bmiOverW;
+    }
+
 }
