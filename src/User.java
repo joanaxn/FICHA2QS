@@ -116,4 +116,15 @@ public class User {
         User.bmiOverW = bmiOverW;
     }
 
+
+    @Override
+    public String toString () {
+        return "Utente{" +
+                "height=" + height +
+                ", age=" + age +
+                ", name='" + name + '\'' +
+                ", weight=" + weight +
+                '}';
+    }
+
 }
